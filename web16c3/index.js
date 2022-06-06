@@ -2,7 +2,7 @@ let express = require("express");
 let app = express();
 let fs = require("fs");
 const crypto = require("crypto");
-
+let PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -72,6 +72,6 @@ app.get("/user", (req, res) => {
 //   next();
 // });
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log("runing server on port:8080");
 });
