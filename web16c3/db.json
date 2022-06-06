@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "voter",
+      "login": "ranjan",
+      "password": "9876",
+      "age": "20"
+    },
+    { "id": "2", "role": "candidate", "votes": "0", "age": "30" }
+  ]
+}
