@@ -6,6 +6,9 @@ let PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.get("/user", (req, res) => {
+  res.send("this is my app");
+});
 app.post("/user/create", (req, res) => {
   fs.readFile("./db.json", { encoding: "utf-8" }, (err, data) => {
     const parsed = JSON.parse(data);
